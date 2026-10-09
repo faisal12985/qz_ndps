@@ -1,4 +1,4 @@
-# New Dream Public School website
+# New Dreams Public School website
 
 This is a static website. Public page content and images are maintained directly in the HTML, CSS, JavaScript, and image files in this project.
 
