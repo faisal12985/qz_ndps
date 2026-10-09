@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Dreams Public School</title>
+    <title>New Dreams Public School | Home</title>
+    <meta name="description" content="Visit the official New Dreams Public School website for school information, academics, admission enquiries, faculty, gallery, and contact details.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="New Dreams Public School">
+    <meta property="og:title" content="New Dreams Public School">
+    <meta property="og:description" content="School information, academics, admission enquiries, faculty, gallery, and contact details.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css?v=github-pages-green-restore-2">
 </head>
 <body>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="images/favicon.png" alt="School Logo">
+                    <img src="images/favicon.png" alt="">
                     New Dreams Public School
                 </div>
-                <nav>
+                <nav aria-label="Primary navigation">
                     <ul id="navMenu">
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                         <li><a href="about.html">About School</a></li>
                         <li><a href="academics.html">Academics</a></li>
                         <li><a href="admission.html">Admission</a></li>
@@ -27,7 +31,7 @@
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
-                <button class="mobile-menu" onclick="toggleMobileMenu()">☰</button>
+                <button class="mobile-menu" type="button" onclick="toggleMobileMenu()" aria-controls="navMenu" aria-expanded="false" aria-label="Open navigation menu">☰</button>
             </div>
         </div>
     </header>
@@ -38,7 +42,7 @@
                 <div class="hero-content">
                     <h1>Welcome to New Dreams Public School</h1>
                     <p>Shaping Tomorrow's Leaders Through Quality Education</p>
-                    <a href="admission.html" class="cta-button">Apply Now</a>
+                    <a href="admission.html" class="cta-button">View Admission Information</a>
                 </div>
             </div>
         </section>
@@ -46,73 +50,64 @@
         <div class="container">
             <div class="slider-container">
                 <div class="slider" id="slider">
-                    <div class="slide" style="background: linear-gradient(45deg, #128c55 0%, #25a86a 100%);">
+                    <div class="slide">
                         <div class="slide-content">
-                            <h2>🏫 Modern Campus Facilities</h2>
-                            <p>State-of-the-art classrooms and laboratories</p>
+                            <h2>Academic Information</h2>
+                            <p>Review the academic information published by the school.</p>
+                            <a href="academics.html" class="slide-link">Explore Academics</a>
                         </div>
                     </div>
-                    <div class="slide" style="background: linear-gradient(45deg, #168f61 0%, #61c58f 100%);">
+                    <div class="slide">
                         <div class="slide-content">
-                            <h2>👨‍🏫 Expert Faculty</h2>
-                            <p>Experienced teachers dedicated to student success</p>
+                            <h2>Faculty</h2>
+                            <p>View the faculty information available on this website.</p>
+                            <a href="faculty.html" class="slide-link">Meet the Faculty</a>
                         </div>
                     </div>
-                    <div class="slide" style="background: linear-gradient(45deg, #2a9d70 0%, #8bd9ad 100%);">
+                    <div class="slide">
                         <div class="slide-content">
-                            <h2>🏆 Academic Excellence</h2>
-                            <p>Consistently high performance in academics and sports</p>
+                            <h2>Admission Information</h2>
+                            <p>Contact the school to confirm current admission details.</p>
+                            <a href="admission.html" class="slide-link">Admission Enquiries</a>
                         </div>
                     </div>
                     
-                <div class="slide" style="background: linear-gradient(45deg, #25a86a 0%, #9be5b7 100%);">
+                    <div class="slide">
                         <div class="slide-content">
-                            <h2>🌟 Holistic Development</h2>
-                            <p>Focus on character building and life skills</p>
+                            <h2>School Gallery</h2>
+                            <p>Browse the photographs published in the school gallery.</p>
+                            <a href="gallery.html" class="slide-link">View Gallery</a>
                         </div>
                     </div>
                 </div>
-                <button class="slider-nav prev" onclick="changeSlide(-1)">❮</button>
-                <button class="slider-nav next" onclick="changeSlide(1)">❯</button>
+                <button class="slider-nav prev" type="button" onclick="changeSlide(-1)" aria-label="Previous slide">❮</button>
+                <button class="slider-nav next" type="button" onclick="changeSlide(1)" aria-label="Next slide">❯</button>
             </div>
-            <div class="slider-dots">
-                <span class="dot active" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-
-            <div class="notice-board">
-                <h2>Latest Notices</h2>
-                <div class="notice-item">
-                    <h4>Annual Sports Day - Registration Open</h4>
-                    <p class="notice-date">July 15, 2025</p>
-                    <p>Students can register for various sports events. Registration deadline: July 25, 2025</p>
+            <div class="slider-controls">
+                <div class="slider-dots" aria-label="Choose a slide">
+                    <button class="dot active" type="button" onclick="currentSlide(1)" aria-label="Show slide 1" aria-pressed="true"></button>
+                    <button class="dot" type="button" onclick="currentSlide(2)" aria-label="Show slide 2" aria-pressed="false"></button>
+                    <button class="dot" type="button" onclick="currentSlide(3)" aria-label="Show slide 3" aria-pressed="false"></button>
+                    <button class="dot" type="button" onclick="currentSlide(4)" aria-label="Show slide 4" aria-pressed="false"></button>
                 </div>
-                <div class="notice-item">
-                    <h4>Parent-Teacher Meeting</h4>
-                    <p class="notice-date">July 10, 2025</p>
-                    <p>Monthly parents-teacher meeting scheduled End Of The Months, 2025, from 9:00 AM to 12:00 PM</p>
-                </div>
-                <div class="notice-item">
-                    <h4>New Academic Session 2025-26</h4>
-                    <p class="notice-date">July 5, 2025</p>
-                    <p>Admission process for new academic session has started. Visit admission desk for details.</p>
-                </div>
+                <button class="slider-toggle" id="sliderToggle" type="button" aria-pressed="false">Pause automatic slide changes</button>
             </div>
 
             <div class="card-grid">
                 <div class="card">
-                    <h3>📚 Quality Education</h3>
-                    <p>We provide comprehensive education with modern teaching methods and experienced faculty to ensure every student reaches their full potential.</p>
+                    <h2>Academics</h2>
+                    <p>See the academic information currently published on this website.</p>
+                    <a href="academics.html">Explore academics</a>
                 </div>
                 <div class="card">
-                    <h3>🏃‍♀️ Sports & Activities</h3>
-                    <p>Our extensive sports and extracurricular programs help students develop physical fitness, teamwork, and leadership skills.</p>
+                    <h2>Admission</h2>
+                    <p>Contact the school to verify current availability, requirements, and fees.</p>
+                    <a href="admission.html">Admission enquiries</a>
                 </div>
                 <div class="card">
-                    <h3>💻 Technology Integration</h3>
-                    <p>Smart classrooms and digital learning resources prepare students for the digital age.</p>
+                    <h2>Contact</h2>
+                    <p>Find the contact information and address listed for the school.</p>
+                    <a href="contact.html">Contact the school</a>
                 </div>
             </div>
         </div>
@@ -124,8 +119,8 @@
                 <div class="footer-section">
                     <h3>New Dreams Public School</h3>
                     <p>Shaping Tomorrow's Leaders Through Quality Education</p>
-                    <p>📧 ndps.qz@gmail.com</p>
-                    <p>📞 +91 9167369056</p>
+                    <p>📧 <a href="mailto:ndps.qz@gmail.com">ndps.qz@gmail.com</a></p>
+                    <p>📞 <a href="tel:+919167369056">+91 9167369056</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -154,10 +149,10 @@
             <div class="social-icons">
                 <h3>follow us</h3>
                 <div class="footer-section">
-                    <a href="https://www.instagram.com/scimfinity?igsh=MXY0OHZ5a3V1NDd2cA==" target="_blank">
+                    <a href="https://www.instagram.com/scimfinity?igsh=MXY0OHZ5a3V1NDd2cA==" target="_blank" rel="noopener noreferrer">
                         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-logo">
                     </a>
-                    <a href="https://wa.me/919167369056" target="_blank">
+                    <a href="https://wa.me/919167369056" target="_blank" rel="noopener noreferrer">
                         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="social-logo">
                     </a>
                     <a href="https://youtube.com/@scimfinity2.0?si=DvUNPcOI1l8PMQK2" target="_blank" rel="noopener noreferrer">
@@ -171,7 +166,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 New Dreams Public School. All rights reserved. | Designed with ❤️ for Education</p>
+                <p>&copy; 2026 New Dreams Public School. All rights reserved. | Designed with ❤️ for Education</p>
             </div>
         </div>
     </footer>

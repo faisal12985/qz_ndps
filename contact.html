@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | New Dreams Public School</title>
+    <title>Contact New Dreams Public School</title>
+    <meta name="description" content="View the address and contact information published for New Dreams Public School. Please confirm details directly with the school.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="New Dreams Public School">
+    <meta property="og:title" content="Contact New Dreams Public School">
+    <meta property="og:description" content="View the school's published address and contact information.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css?v=github-pages-green-restore-2">
 </head>
 <body>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="images/favicon.png" alt="School Logo">
+                    <img src="images/favicon.png" alt="">
                     New Dreams Public School
                 </div>
-                <nav>
+                <nav aria-label="Primary navigation">
                     <ul id="navMenu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About School</a></li>
@@ -24,10 +28,10 @@
                         <li><a href="admission.html">Admission</a></li>
                         <li><a href="faculty.html">Faculty</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html" class="active">Contact Us</a></li>
+                        <li><a href="contact.html" class="active" aria-current="page">Contact Us</a></li>
                     </ul>
                 </nav>
-                <button class="mobile-menu" onclick="toggleMobileMenu()">☰</button>
+                <button class="mobile-menu" type="button" onclick="toggleMobileMenu()" aria-controls="navMenu" aria-expanded="false" aria-label="Open navigation menu">☰</button>
             </div>
         </div>
     </header>
@@ -39,9 +43,8 @@
             <div class="card-grid">
                 <div class="card">
                     <h3>📍 Visit Us</h3>
-                    <p><strong>New Dream School</strong><br>
-                    <span class="contact-address">Quazitola
-Quazitola (Basantpur), Abadpur-Barsoi,
+                    <p><strong>New Dreams Public School</strong><br>
+                    <span class="contact-address">Quazitola (Basantpur), Abadpur-Barsoi,
 P.O. - Shivanandpur,
 P.S. - Abadpur Via - Barsoi,
 Dist - Katihar,
@@ -50,18 +53,16 @@ India</span></p>
                 </div>
                 <div class="card">
                     <h3>📞 Call Us</h3>
-                    <p><strong>Main Office:</strong> +91 9167369056<br>
-                    <strong>Admission Office:</strong> +91 9006697676<br>
-                    <strong>Principal:</strong> +91 9060578556</p>
+                    <p><strong>Main Office:</strong> <a href="tel:+919167369056">+91 9167369056</a><br>
+                    <strong>Admission Office:</strong> <a href="tel:+919006697676">+91 9006697676</a><br>
+                    <strong>Principal:</strong> <a href="tel:+919060578556">+91 9060578556</a></p>
                 </div>
                 <div class="card">
                     <h3>✉️ Email Us</h3>
                     <p><strong>General Inquiries:</strong><br>
-                    ndps.qz@gmail.com<br>
+                    <a href="mailto:ndps.qz@gmail.com">ndps.qz@gmail.com</a><br>
                     <strong>Admissions:</strong><br>
-                    mdf100114@gmail.com<br>
-                    <strong>Principal:</strong><br>
-                    --</p>
+                    <a href="mailto:mdf100114@gmail.com">mdf100114@gmail.com</a></p>
                 </div>
             </div>
 
@@ -88,21 +89,6 @@ India</span></p>
                 </div>
             </div>
 
-            <div class="card">
-                <h2>🗺️ Location Map</h2>
-                <div style="background: linear-gradient(135deg, #0b653d 0%, #25a86a 100%); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
-                    <div style="text-align: center;">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">🗺️</div>
-                        <p style="color: white;">Interactive Map Location</p>
-                        <p style="color: white;">New Dreams Public School Quazitola (Basantpur), Abadpur-Barsoi Road,
-                            P.O. Shivanandpur,
-                            P.S. - Abadpur,
-                            Via - Barsoi,
-                            Dist - Katihar
-                            Bihar - 855102</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 
@@ -112,8 +98,8 @@ India</span></p>
                 <div class="footer-section">
                     <h3>New Dreams Public School</h3>
                     <p>Shaping Tomorrow's Leaders Through Quality Education</p>
-                    <p>📧 ndps.qz@gmail.com</p>
-                    <p>📞 +91 9167369056</p>
+                    <p>📧 <a href="mailto:ndps.qz@gmail.com">ndps.qz@gmail.com</a></p>
+                    <p>📞 <a href="tel:+919167369056">+91 9167369056</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -142,10 +128,10 @@ India</span></p>
             <div class="social-icons">
                 <h3>follow us</h3>
                 <div class="footer-section">
-                    <a href="https://www.instagram.com/scimfinity?igsh=MXY0OHZ5a3V1NDd2cA==" target="_blank">
+                    <a href="https://www.instagram.com/scimfinity?igsh=MXY0OHZ5a3V1NDd2cA==" target="_blank" rel="noopener noreferrer">
                         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-logo">
                     </a>
-                    <a href="https://wa.me/919167369056" target="_blank">
+                    <a href="https://wa.me/919167369056" target="_blank" rel="noopener noreferrer">
                         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="social-logo">
                     </a>
                     <a href="https://youtube.com/@scimfinity2.0?si=DvUNPcOI1l8PMQK2" target="_blank" rel="noopener noreferrer">
@@ -159,7 +145,7 @@ India</span></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 New Dreams Public School. All rights reserved. | Designed with ❤️ for Education</p>
+                <p>&copy; 2026 New Dreams Public School. All rights reserved. | Designed with ❤️ for Education</p>
             </div>
         </div>
     </footer>
